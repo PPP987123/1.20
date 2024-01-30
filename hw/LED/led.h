@@ -11,8 +11,8 @@
 #define LED2_GPIO_PIN   GPIO_Pin_8
 
 typedef uint8_t led_bit;
-typedef uint32_t led_bits;//储存多个LED状态
-//枚举函数
+typedef uint32_t led_bits;
+//鏋氫妇鍑芥暟
 typedef enum LED_ELE_LEVEL{
     LED_LOW_LEVEL = 0,
     LED_HIGH_LEVEL
@@ -31,7 +31,6 @@ typedef struct LED_Class{
     
 } LED_Class;
 
-//这里是定义，定义可以通用，声明在main.c中（声明按照不同板子）
 extern void led_out_gpio(uint8_t arg_int, int led_n);
 extern uint8_t led_in_gpio(int led_n);
 
